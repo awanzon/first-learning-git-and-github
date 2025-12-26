@@ -78,6 +78,55 @@ else {
   console.log(`You're ${age} years old, sorry but you're too old for this Environment. Enjoy your retirement`);
 }
 age = 18;
-*/
 
-// Falsey Values
+
+// Falsey Values (considered false when converted into a Boolean)
+_undefined
+_null
+_NaN
+_0
+_"" (empty strings)
+_false
+
+// Truthy Values (considered True when converted into a Boolean)
+_all numbers (1,2,3,4,5,etc)
+_all strings that not empty ("Awan is Great" + "null" + "false")
+_empty arrays and objects {} []
+
+
+
+//Ternary Operator (a Shortcut to write an if else statement)
+
+let loggedIn = true;
+let hasMembership = true;
+
+let page = loggedIn && hasMembership ? "Show the video" : "Please Sign Up";
+console.log(page);
+
+
+
+//Loop
+for loop (common used)
+while loop 
+do while loop 
+
+
+let counter = 1;
+while (counter <= 21) {
+  console.log(counter);
+  counter = counter + 1;
+}
+console.log("While loop Finished running"); */
+
+let progress = 0;
+
+const interval = setInterval(() => {
+  progress++;
+  console.log(`Loading... ${progress}%`);
+
+  if (progress >= 100) {
+    clearInterval(interval);
+    console.log("Loading complete!");
+  }
+}, 50);
+
